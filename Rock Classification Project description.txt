@@ -1,0 +1,65 @@
+# Rock Classification Project README
+
+## Overview
+
+This repository focuses on applying various classification methods to predict rock categories based on 19 different features. The dataset comprises rock features and corresponding labels indicating rock category numbers (1 = Igneous, 2 = Metamorphic, 3 = Sedimentary). The data is sourced from the aggregateRockData.xlsx and norm540.txt files, with details available on the [dataset website](https://osf.io/cvwu9/wiki/Data%20File%20Descriptions/).
+
+## Data Exploration
+
+### 1. Statistical Analysis and Visualization
+
+- Descriptive statistics for each attribute.
+- Histograms to visualize attribute distributions.
+
+Special Treatment:
+- Identification of attributes requiring special treatment, if any.
+  
+## Data Relationships
+
+### 2. Attribute Relationships and Correlation
+
+- Computation of Pearson Correlation Coefficient (PCC).
+- Generation of scatter plots to analyze attribute relationships and their impact on the label.
+
+## Data Splitting
+
+### 3. Train-Validation-Test Split
+
+- Methodology for splitting data into 60% training, 20% validation, and 20% testing.
+- Verification of representativeness for the test and validation subsets.
+
+## Model Training and Hyperparameter Tuning
+
+### 4. Classifier Training and Performance
+
+#### A. Multinomial Logistic Regression
+
+- Exploration of hyperparameters: C, solver, max number of iterations.
+- Reporting of training, validation, and testing performance metrics (accuracy, precision, recall, F1 score).
+
+#### B. Support Vector Machines
+
+- Exploration of hyperparameters: C, kernel, degree of polynomial kernel, gamma.
+- Reporting of training, validation, and testing performance metrics.
+
+#### C. Random Forest Classifier
+
+- Exploration of hyperparameters: number of trees, max depth, minimum samples required to split an internal node, minimum samples required at a leaf node.
+- Analysis of feature importance.
+- Reporting of training, validation, and testing performance metrics.
+
+## Ensemble Learning
+
+### 5. Ensemble Classifier
+
+- Combination of classifiers into an ensemble.
+- Evaluation of ensemble performance on the validation set.
+- Application of the best-performing ensemble on the test set.
+
+## Conclusion
+
+- Summary of findings and insights.
+- Discussion of the impact of hyperparameters on model performance.
+- Potential avenues for further exploration and improvement.
+
+Feel free to explore the codebase, replicate the analysis, and contribute to enhance the rock classification model.
